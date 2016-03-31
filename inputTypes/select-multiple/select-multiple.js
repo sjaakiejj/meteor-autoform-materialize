@@ -5,6 +5,6 @@ Template.afSelectMultiple_materialize.helpers({
 Template.afSelectMultiple_materialize.helpers({
   atts: function() {
     var atts = Utility.attsToggleInvalidClass.call(this);
-    return AutoForm.Utility.addClass(atts, 'browser-default');
+    return AutoForm.Utility.addClass(atts, '');
   }
 });
