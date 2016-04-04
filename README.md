@@ -2,9 +2,13 @@ Meteor Autoform Materialize templates
 =========================
 Adds [materialize](http://materializecss.com/) templates for autoform.
 
+## Why does this fork exist?
+The original repository adds a 'browser-default' class to multi-selects, which overrides the standard materializecss multi-select. This repository resolves this problem. The only caveat is for multi-selects that depend on collections. For these you'll need a waitFor in your iron-router, or manually call $('select').material_select() after the subscription is ready.
+
 ## Setup
 
-1. `meteor add gildaspk:autoform-materialize`
+1. Clone this repository into your meteor-app/packages directory
+2. `meteor add sjaakiejj:autoform-materialize`
 2. In a client file (ex: `/client/config/autoform.js`)
   ```
   AutoForm.setDefaultTemplate('materialize');
